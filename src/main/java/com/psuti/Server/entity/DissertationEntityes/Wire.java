@@ -47,7 +47,7 @@ public class Wire implements Serializable {
     @Column(length = 125,name = "supplier")
     private String supplier;
 
-    @Column(nullable = false, length = 20,name = "quantity")
+    @Column(length = 20,name = "quantity")
     private int quantity;
 
     @Column (name = "category")

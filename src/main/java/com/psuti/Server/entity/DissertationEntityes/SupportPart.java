@@ -38,7 +38,7 @@ public class SupportPart implements Serializable {
     private DPN DPN;
 */
 
-    @Column(nullable = false, length = 25,name = "name")
+    @Column(length = 25,name = "name")
     private String name;
 
     @Column(length = 125,name = "description")
