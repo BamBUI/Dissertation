@@ -1,0 +1,425 @@
+{
+	"info": {
+		"_postman_id": "938d630e-136a-4d91-a9bb-164007e0279d",
+		"name": "Dissertation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18597781"
+	},
+	"item": [
+		{
+			"name": "Reg",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"email\":\"keeperofdungeon@gmail.com\",\r\n\t\"firstname\":\"Jack\",\r\n\t\"lastname\":\"Jackson\",\r\n\t\"password\":\"11112222\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/auth/reg/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"auth",
+						"reg",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJub25lIn0.eyJzdWIiOiIxMzY0ZDJiMy02NGUwLTQwOTAtOGQ5Ni00ZjU4YTAxNjkxZWNzaW1wbGUiLCJpYXQiOjE2ODQ0OTI5MzEsImV4cCI6MTY4NDU3OTMzMX0.",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"email\":\"keeperofdungeon@gmail.com\",\r\n\t\"password\":\"11112222\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/auth/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJub25lIn0.eyJzdWIiOiJhMmE0YzhmYS1mOThiLTQxZTQtYWM5NC1kNjA3Zjc4MjBkYjFzaW1wbGUiLCJpYXQiOjE2NzA0OTIzMzUsImV4cCI6MTY3MDU3ODczNX0.",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"email\":\"strongwoman@man.ru\",\r\n\t\"password\":\"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/auth/logout",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirm",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJub25lIn0.eyJzdWIiOiIxMzY0ZDJiMy02NGUwLTQwOTAtOGQ5Ni00ZjU4YTAxNjkxZWNzaW1wbGUiLCJpYXQiOjE2ODQ0OTI5MzEsImV4cCI6MTY4NDU3OTMzMX0.",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"email\":\"keeperofdungeon@gmail.com\",\r\n\t\"password\":\"11112222\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/auth/confirm?token=8d2445d3-fff9-4e67-8919-24712af57385",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"auth",
+						"confirm"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "8d2445d3-fff9-4e67-8919-24712af57385"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "additionalPart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJub25lIn0.eyJzdWIiOiIxMzY0ZDJiMy02NGUwLTQwOTAtOGQ5Ni00ZjU4YTAxNjkxZWNzaW1wbGUiLCJpYXQiOjE2ODQ0OTI5MzEsImV4cCI6MTY4NDU3OTMzMX0.",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/crowd",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"crowd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "сonnector",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJub25lIn0.eyJzdWIiOiIxMzY0ZDJiMy02NGUwLTQwOTAtOGQ5Ni00ZjU4YTAxNjkxZWNzaW1wbGUiLCJpYXQiOjE2ODQ0OTI5MzEsImV4cCI6MTY4NDU3OTMzMX0.",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/crowd",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"crowd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "covering",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJub25lIn0.eyJzdWIiOiIxMzY0ZDJiMy02NGUwLTQwOTAtOGQ5Ni00ZjU4YTAxNjkxZWNzaW1wbGUiLCJpYXQiOjE2ODQ0OTI5MzEsImV4cCI6MTY4NDU3OTMzMX0.",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/crowd",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"crowd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cpn",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJub25lIn0.eyJzdWIiOiIxMzY0ZDJiMy02NGUwLTQwOTAtOGQ5Ni00ZjU4YTAxNjkxZWNzaW1wbGUiLCJpYXQiOjE2ODQ0OTI5MzEsImV4cCI6MTY4NDU3OTMzMX0.",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/crowd",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"crowd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dpn",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJub25lIn0.eyJzdWIiOiIxMzY0ZDJiMy02NGUwLTQwOTAtOGQ5Ni00ZjU4YTAxNjkxZWNzaW1wbGUiLCJpYXQiOjE2ODQ0OTI5MzEsImV4cCI6MTY4NDU3OTMzMX0.",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/crowd",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"crowd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "groupList",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJub25lIn0.eyJzdWIiOiIxMzY0ZDJiMy02NGUwLTQwOTAtOGQ5Ni00ZjU4YTAxNjkxZWNzaW1wbGUiLCJpYXQiOjE2ODQ0OTI5MzEsImV4cCI6MTY4NDU3OTMzMX0.",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/crowd",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"crowd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "information",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJub25lIn0.eyJzdWIiOiIxMzY0ZDJiMy02NGUwLTQwOTAtOGQ5Ni00ZjU4YTAxNjkxZWNzaW1wbGUiLCJpYXQiOjE2ODQ0OTI5MzEsImV4cCI6MTY4NDU3OTMzMX0.",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/crowd",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"crowd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "specialWire",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJub25lIn0.eyJzdWIiOiIxMzY0ZDJiMy02NGUwLTQwOTAtOGQ5Ni00ZjU4YTAxNjkxZWNzaW1wbGUiLCJpYXQiOjE2ODQ0OTI5MzEsImV4cCI6MTY4NDU3OTMzMX0.",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/crowd",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"crowd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subAssembly",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJub25lIn0.eyJzdWIiOiIxMzY0ZDJiMy02NGUwLTQwOTAtOGQ5Ni00ZjU4YTAxNjkxZWNzaW1wbGUiLCJpYXQiOjE2ODQ0OTI5MzEsImV4cCI6MTY4NDU3OTMzMX0.",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/crowd",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"crowd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wire",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJub25lIn0.eyJzdWIiOiIxMzY0ZDJiMy02NGUwLTQwOTAtOGQ5Ni00ZjU4YTAxNjkxZWNzaW1wbGUiLCJpYXQiOjE2ODQ0OTI5MzEsImV4cCI6MTY4NDU3OTMzMX0.",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/crowd",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"crowd"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
