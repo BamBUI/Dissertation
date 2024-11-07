@@ -18,7 +18,7 @@ public class Covering implements Serializable {
     @Column(name = "id")
     private UUID id;
 
-    @Column(nullable = false, length = 25,name = "coveringName")
+    @Column(length = 25,name = "coveringName")
     private String coveringName;
 
     /*

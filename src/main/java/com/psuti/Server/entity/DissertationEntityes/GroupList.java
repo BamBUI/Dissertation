@@ -33,7 +33,7 @@ public class GroupList implements Serializable {
     @Column(length = 125,name = "groupDescription")
     private String groupDescription;
 
-    @Column(nullable = false, length = 25,name = "name")
+    @Column(length = 25,name = "name")
     private String name;
 
     @Column(length = 125,name = "description")
